@@ -6,6 +6,7 @@
 - virtualenv
 - Flask
 - SQLAlchemy
+- Jinja 2
 
 # Instructions
 1. Make sure you have Python installed
