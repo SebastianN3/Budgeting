@@ -1,8 +1,12 @@
 from flask import Flask, render_template
 import sqlite3
 import os.path
+from blueprints.test.blueprintTest import test
 
 app = Flask(__name__)
+
+# Register my Blueprint
+app.register_blueprint(test, url_prefix="/admin")
 
 @app.route('/')
 def index():
