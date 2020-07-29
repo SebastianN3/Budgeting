@@ -6,6 +6,8 @@ from blueprints.test.blueprintTest import test
 app = Flask(__name__)
 
 # Register my Blueprint
+# url_prefix marks the start of the url to send to the blueprint
+# In this case: if /admin/test is requested, the blueprint will receive /test
 app.register_blueprint(test, url_prefix="/admin")
 
 @app.route('/')
