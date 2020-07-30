@@ -35,14 +35,6 @@ def create_database():
     # execute the statement 
     cursor.execute(sql_command) 
     
-    # SQL command to insert the data in the table 
-    sql_command = """INSERT INTO emp VALUES (23, "Rishabh", "Bansal", "M", "2014-03-28");"""
-    cursor.execute(sql_command) 
-    
-    # another SQL command to insert the data in the table 
-    sql_command = """INSERT INTO emp VALUES (1, "Bill", "Gates", "M", "1980-10-28");"""
-    cursor.execute(sql_command) 
-    
     # To save the changes in the files. Never skip this.  
     # If we skip this, nothing will be saved in the database. 
     connection.commit() 

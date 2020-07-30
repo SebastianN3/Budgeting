@@ -5,5 +5,47 @@
 {% endblock %}
 
 {% block body%}
-Welcome!
+<h1 class="display-1" style="text-align: center;">Welcome</h1>
+<h3 class="display-6" style="text-align: center;">Please select your desired action :)</h3>
+{% endblock %}
+
+{% block container %} 
+<div class="container pb-3">
+    <div class="card">
+      <div class="card-header">
+        <h3 style="text-align: center;">Adding Expenses</h3>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Here you can add some of your expenses for the current month</h5>
+        <!-- <p class="card-text">Here you can add some of your expenses for the current month</p> -->
+        <a href="/budget" class="btn btn-primary">Go Budget</a>
+      </div>
+    </div>
+  </div> 
+
+  <div class="container pb-3">
+    <div class="card">
+      <div class="card-header">
+        Featured
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div> 
+
+  <div class="container pb-3">
+    <div class="card">
+      <div class="card-header">
+        Featured
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div> 
 {% endblock %}
