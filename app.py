@@ -1,14 +1,15 @@
 from flask import Flask, render_template
 import sqlite3
 import os.path
-from blueprints.test.blueprintTest import test
+# from blueprints.test.blueprintTest import test
+import blueprints.budget.budget as budget
 
 app = Flask(__name__)
 
 # Register my Blueprint
 # url_prefix marks the start of the url to send to the blueprint
 # In this case: if /admin/test is requested, the blueprint will receive /test
-app.register_blueprint(test, url_prefix="/admin")
+app.register_blueprint(budget.add, url_prefix="/budget")
 
 @app.route('/')
 def index():
