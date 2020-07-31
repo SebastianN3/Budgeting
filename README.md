@@ -14,6 +14,6 @@
 1. Install virtualenv using `pip3 install virtualenv`
 1. Create the virtual environment using `virtualenv env`
     1. `env` is a convention. You can use whatever you want
-1. Activate the virtual environment using `sourve env/bin/activate`
-    1. In windows you will use `\env\Scripts\activate.bat`
-1. Install Flask and SQLAlchemy using `pip3 install flask`
+1. Activate the virtual environment using `source env/bin/activate`
+    1. In windows you will use `source \env\Scripts\activate`
+1. Install Flask using `pip3 install flask`

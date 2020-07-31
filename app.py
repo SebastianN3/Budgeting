@@ -20,18 +20,18 @@ def index():
 
 def create_database():
     # connecting to the database  
-    connection = sqlite3.connect("./databases/myTable.db") 
+    connection = sqlite3.connect("./databases/budget.db") 
     
     # cursor (This is a control structure used to traverse and fetch the records of the database)  
     cursor = connection.cursor() 
     
     # SQL command to create a table in the database
-    sql_command = """CREATE TABLE emp (  
-    staff_number INTEGER PRIMARY KEY,  
-    fname VARCHAR(20),  
-    lname VARCHAR(30),  
-    gender CHAR(1),  
-    joining DATE);"""
+    sql_command = """CREATE TABLE expense (  
+    id INTEGER PRIMARY KEY,  
+    item VARCHAR(80),  
+    label VARCHAR(20),  
+    price FLOAT,  
+    purchased DATE);"""
     
     # execute the statement 
     cursor.execute(sql_command) 
@@ -46,7 +46,7 @@ def create_database():
 
 if __name__ == '__main__':
     # Create Database if it does not exist
-    if (not os.path.isfile("./databases/myTable.db")):
+    if (not os.path.isfile("./databases/budget.db")):
         create_database()
     
     # Run server 
